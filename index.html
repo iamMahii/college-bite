@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Canteen Pre-Order</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-utensils"></i>
+            <h1>Campus Bites</h1>
+        </div>
+        <div class="nav-items">
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="user-profile">
+                <i class="fas fa-user"></i>
+                <span class="points">150 pts</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2>Skip the Queue,<br>Order in Advance!</h2>
+            <p>Pre-order your favorite items from the college canteen</p>
+            <button class="sparkly-btn">
+                Order Now <i class="fas fa-arrow-right"></i>
+            </button>
+        </section>
+
+        <section class="trending">
+            <h3><i class="fas fa-fire"></i> Trending Now</h3>
+            <div class="items-grid" id="trending-items">
+                <!-- Items will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section class="menu">
+            <h3><i class="fas fa-utensils"></i> Today's Menu</h3>
+            <div class="category-filters">
+                <button class="active">
+                    <i class="fas fa-border-all"></i> All
+                </button>
+                <button>
+                    <i class="fas fa-coffee"></i> Beverages
+                </button>
+                <button>
+                    <i class="fas fa-cookie"></i> Snacks
+                </button>
+                <button>
+                    <i class="fas fa-hamburger"></i> Meals
+                </button>
+            </div>
+            <div class="items-grid" id="menu-items">
+                <!-- Items will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-fab">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <h3><i class="fas fa-shopping-bag"></i> Your Order</h3>
+            <div class="cart-items">
+                <!-- Cart items will be populated by JavaScript -->
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>₹0.00</span>
+            </div>
+            <button class="sparkly-btn checkout-btn">
+                <i class="fas fa-lock"></i> Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/darkMode.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

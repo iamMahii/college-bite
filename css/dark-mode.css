@@ -1,0 +1,31 @@
+body.dark-mode {
+    --surface-color: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .item-card {
+    background: #2d2d2d;
+}
+
+.dark-mode .modal-content {
+    background: #2d2d2d;
+}
+
+.dark-mode .theme-toggle {
+    color: #ffffff;
+}
+
+.dark-mode .theme-toggle i::before {
+    content: "\f185"; /* Sun icon */
+}
+
+/* Glowing effects for dark mode */
+.dark-mode .item-card:hover {
+    box-shadow: 0 0 20px rgba(236, 110, 173, 0.2);
+}
+
+.dark-mode .cart-fab {
+    box-shadow: 0 0 20px rgba(236, 110, 173, 0.3);
+}
