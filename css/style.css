@@ -407,6 +407,21 @@ body {
     }
 }
 
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h2 {
